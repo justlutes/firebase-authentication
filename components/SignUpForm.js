@@ -15,11 +15,12 @@ class SignUpForm extends Component {
         } catch (err) {
             console.log(err);
         }
+        this.setState({ phone: '', code: '' });
     }
 
     render() {
         return (
-            <View>
+            <View style={{ width: '95%' }}>
                 <View style={{ marginBottom: 10 }}>
                     <FormLabel>Enter Phone Number</FormLabel>
                     <FormInput 
